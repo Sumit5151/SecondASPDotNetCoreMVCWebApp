@@ -1,0 +1,43 @@
+﻿@using SecondASPDotNetCoreMVCWebApp.Models
+
+
+@model List<User>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Gender</td>
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @{
+            foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Name</td>
+                    <td>@user.Gender</td>
+
+                </tr>
+            }
+
+        }
+
+
+
+
+    </tbody>
+
+
+
+
+
+
+</table>
+
+
+
